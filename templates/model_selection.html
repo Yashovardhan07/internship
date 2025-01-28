@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Selection</title>
+    <style>
+        /* General body styling */
+        body {
+            background: url('https://wallpapercave.com/wp/wp1886387.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 10%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Greeting text animation */
+        .greeting {
+            font-size: 1.8rem;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            animation: slideIn 2s ease-out;
+        }
+
+        .greeting span {
+            font-weight: bold;
+            font-family: 'Poppins', Arial, sans-serif;
+            letter-spacing: 1px;
+        }
+
+        /* Button styles */
+        button {
+            padding: 15px 30px;
+            margin: 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Slide-in animation for greeting */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Greeting Section -->
+    <div class="greeting">
+        <span><h1>Hello Farmer</h1></span> 🌱
+    </div>
+
+    <!-- Main Heading -->
+    <h2>Select a Model</h2>
+
+    <!-- Buttons -->
+    <div>
+        <button onclick="location.href='/upload/potato'">Potato</button>
+        <button onclick="location.href='/upload/tomato'">Tomato</button>
+        <button onclick="location.href='/upload/grapes'">Grapes</button>
+        <button onclick="location.href='/upload/apple'">Apple</button>
+    </div>
+</body>
+</html>

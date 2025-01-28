@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background: url('https://wallpapercave.com/wp/wp1886387.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        .result {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h1.disease-heading {
+            color: yellow;
+            font-size: 2.5rem; /* Change this value to adjust font size */
+        }
+
+        span.predicted-heading {
+            color: red;
+        }
+
+        h2.treatment-heading {
+            color: green;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="result">
+        <h1 class="disease-heading">{{ model_name }} Disease Prediction</h1>
+        <img src="/uploads/{{ image_filename }}" alt="Uploaded Image">
+        <h2><span class="predicted-heading">Predicted Class:</span> {{ predicted_class }}</h2>
+        <h2 class="treatment-heading">Treatment:</h2>
+        <p>{{ treatment }}</p>
+        <a href="/">Go back to home</a>
+    </div>
+</body>
+</html>
