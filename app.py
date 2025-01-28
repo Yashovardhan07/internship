@@ -18,7 +18,7 @@ def load_tflite_model(model_path):
 
 models = {
     "potato": {
-        "model_path": r"C:\Users\yasho\OneDrive\Desktop\models\potato.tflite",
+        "model_path": r"C:\Users\yasho\OneDrive\Desktop\internship\models\potato.tflite",
         "class_names": ["Early Blight", "Healthy", "Late Blight"],
     },
     "tomato": {
