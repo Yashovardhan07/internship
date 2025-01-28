@@ -22,15 +22,15 @@ models = {
         "class_names": ["Early Blight", "Healthy", "Late Blight"],
     },
     "tomato": {
-        "model_path": r"C:\Users\yasho\OneDrive\Desktop\models\tomato.tflite",
+        "model_path": r"C:\Users\yasho\OneDrive\Desktop\internship\models\tomato.tflite",
         "class_names": ["Bacterial Spot", "Healthy", "Yellow Leaf Curl"],
     },
     "grapes": {
-        "model_path": r"C:\Users\yasho\OneDrive\Desktop\models\grape.tflite",
+        "model_path": r"C:\Users\yasho\OneDrive\Desktop\internship\models\grape.tflite",
         "class_names": ["Powdery Mildew", "Healthy", "Downy Mildew"],
     },
     "apple": {
-        "model_path": r"C:\Users\yasho\OneDrive\Desktop\models\apple.tflite",
+        "model_path": r"C:\Users\yasho\OneDrive\Desktop\internship\models\apple.tflite",
         "class_names": ["Apple Scab", "Healthy", "Apple Black Rot"],
     },
 }
